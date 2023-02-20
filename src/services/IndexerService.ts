@@ -35,7 +35,7 @@ class IndexerService {
     public async getCounters() {
         await this._initPg();
         const counterQueryResult = await this._pgClient.query(
-            `SELECT * FROM ${process.env.DB_SCHEMA}.counters;`
+            `SELECT * FROM ${process.env.DB_SCHEMA}.counters ORDER BY relation_name;`
         );
 
         return counterQueryResult.rows;
