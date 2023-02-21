@@ -62,12 +62,9 @@ class IndexerService {
     public async getRabbitMQ() {
         const listQueueNames = [
             'evm-indexer-event-transfer',
-            'evm-indexer-save-log',
             'evm-indexer-save-data',
-            'evm-indexer-save-transfer_event',
             'evm-indexer-save-balance',
             'evm-indexer-push-event-error',
-            'evm-indexer-save-log-error',
             'evm-indexer-save-transaction',
         ]
 
