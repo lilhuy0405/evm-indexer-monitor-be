@@ -66,6 +66,7 @@ class IndexerService {
             'evm-indexer-save-balance',
             'evm-indexer-push-event-error',
             'evm-indexer-save-transaction',
+            'evm-indexer-save-transfer_event'
         ]
 
         await this._initRabbitMQ();
