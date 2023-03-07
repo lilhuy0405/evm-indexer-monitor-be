@@ -79,6 +79,8 @@ class IndexerService {
         }
         //close channel
         await this._rabbitMQChannel.close();
+        //close connection
+        await this._rabbitMQChannel.connection.close();
         this._rabbitMQChannel = null;
         return listQueues;
 
